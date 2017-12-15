@@ -11,7 +11,6 @@ html {
   font-size: 16px;
   font-weight: 400;
   color: #333;
-  background-color: #DAD8D1;
 }
 
 strong {
@@ -31,19 +30,9 @@ header, footer {
   width: 100%
 }
 
-main {
-  display: flex;
-  flex-flow: column wrap;
-  align-content: center;
-  justify-content: space-between;
-  width: 100%;
-  position: relative;
-  top: 4rem;
-}
-
 /* Header Desktop Styles */
 header {
-  background-color: rgba(172, 100, 4, 0.85);
+  background-color: rgba(86, 100, 120, 0.85);
   position: fixed;
   z-index: 1;
   height: 4rem;
@@ -55,6 +44,7 @@ header #logo {
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem;
+  height: 2rem;
 }
 
 header #wordmark {
@@ -87,7 +77,83 @@ nav ul li {
 }
 
 /* Main Section Desktop Styles */
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  top: 4rem;
+}
 
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+.img-60 {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 60%;
+  padding-right: 1.5rem;
+}
+
+.img-60 img {
+  width: 100%;
+  height: auto;
+}
+
+/* Banner Section Desktop Styles */
+#banner {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 1.5rem;
+}
+
+.cta {
+  display: flex;
+  flex-flow: column wrap;
+  width: 40%;
+  justify-content: center;
+  padding-left: 1rem;
+}
+
+.cta h1 {
+  color: #566478;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 4rem;
+  padding-bottom: 3rem;
+  width: 75%;
+}
+
+.cta p {
+  width: 75%;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+}
+
+.btn {
+  width: 75%;
+  height: auto;
+  font-size: 1.25rem;
+  background-color: #ac6404;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.25rem;
+  margin-top: 2rem;
+}
+
+.btn a {
+  color: #fff;
+  text-decoration: none;
+}
 
 /* Footer Desktop Styles */
 footer {
