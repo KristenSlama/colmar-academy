@@ -1,7 +1,106 @@
 /* color palette - colors pulled from banner image
-  Orange = #ac6404 - for buttons and read more links (and maybe header?)
-  Blue = #566478 - for headlines >h3
-  Beige = #DAD8D1 - general background color
-  Dark Gray = # 2c2b30 - for body text and ≤h3
-  Taupe = #84766d - newsfeed hover color
+  Orange = #ac6404 rgb(172, 100, 4)- for buttons and read more links
+  Blue = #566478 rgb(86, 100, 120)- for headlines >h3
+  Beige = #DAD8D1 rgb(218, 216, 209) - general background color
+  Dark Gray = #333333 rgb(51, 51, 51) - for body text and ≤h3
+  Taupe = #84766d rgb(132, 118, 109) -
 */
+
+html {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  background-color: #DAD8D1;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-weight: 400;
+  font-style: italic;
+}
+
+header, footer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%
+}
+
+main {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  top: 4rem;
+}
+
+/* Header Desktop Styles */
+header {
+  background-color: rgba(172, 100, 4, 0.85);
+  position: fixed;
+  z-index: 1;
+  height: 4rem;
+}
+
+header #logo {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+header #wordmark {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+nav {
+  padding: 1rem;
+}
+
+nav ul li {
+  padding: 0.5rem;
+}
+
+#desktop-nav {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#desktop-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#mobile-nav {
+  display: none;
+}
+
+/* Main Section Desktop Styles */
+
+
+/* Footer Desktop Styles */
+footer {
+  position: relative;
+  top: 64px;
+  padding: 1rem 1.5rem 2rem 1.5rem;
+  border-top: .0625rem solid #84766d;
+  font-size: 0.75rem;
+  color: #84766d;
+}
+
+#footer-links a {
+  color: inherit;
+  text-decoration: none;
+  padding-left: 0.5rem;
+}
