@@ -27,11 +27,11 @@ header, footer {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
-  width: 100%
 }
 
 /* Header Desktop Styles */
 header {
+  width: 100%;
   background-color: rgba(86, 100, 120, 0.85);
   position: fixed;
   z-index: 1;
@@ -93,6 +93,16 @@ main {
   width: 100%;
 }
 
+h3 {
+  font-size: 1.5rem;
+  color: #566478;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
 .img-60 {
   display: flex;
   flex-flow: column nowrap;
@@ -128,23 +138,19 @@ main {
 .img-35 img {
   width: 100%;
   height: auto;
-  min-width: 10.18rem;
 }
 
 .feed-text h3 {
-  font-size: 1.5rem;
-  color: #566478;
   padding-bottom: 0.5rem;
 }
 
-.feed-text p {
-  font-size: 1rem;
-  line-height: 2rem;
-}
-
-.feed-text a {
+.section-title {
   color: #ac6404;
-  text-decoration: none;
+  font-size: 2.125rem;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  padding: 2rem;
 }
 
 /* Banner Section Desktop Styles */
@@ -152,7 +158,6 @@ main {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-  align-items: center;
   width: 100%;
   padding: 2rem 1.5rem;
 }
@@ -198,7 +203,9 @@ main {
 }
 
 /* Information Section Desktop Styles */
-
+#info {
+  background-color: rgba(218, 216, 209, 0.15);
+}
 .cta-2 h2 {
   color: #566478;
   font-size: 2.5rem;
@@ -210,13 +217,13 @@ main {
 
 .cta-2 p {
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
   padding-bottom: 2rem;
 }
 
 #emanuel {
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: .75rem;
+  color: #84766d
 }
 
 #emanuel a {
@@ -226,6 +233,42 @@ main {
 
 .img-mobile {
   display: none;
+}
+
+.feed-text a {
+  color: #ac6404;
+  text-decoration: none;
+}
+
+#lecture {
+  border-bottom: none;
+}
+
+#lecture img {
+  width: 12.3rem;
+}
+
+/* Courses Section Desktop Styles */
+
+/* Thesis Section Desktop Styles */
+#thesis {
+  background-color: rgba(218, 216, 209, 0.15);
+}
+
+#thesis .img-60 {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+#thesis video {
+  padding-bottom: 1.5rem;
+}
+
+.video-des h3 {
+  padding-bottom: 0.5rem;
+}
+
+#now-then {
+  border-bottom: none;
 }
 
 
