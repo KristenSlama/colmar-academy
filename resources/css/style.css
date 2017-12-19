@@ -72,6 +72,10 @@ nav ul li {
   text-decoration: none;
 }
 
+#desktop-nav a:hover {
+  color: #fff;
+}
+
 #mobile-nav {
   display: none;
 }
@@ -130,6 +134,10 @@ p {
   border-bottom: .0625rem solid #84766d;
 }
 
+.row:hover {
+  background-color: rgba(86, 100, 120, 0.25);
+}
+
 .img-35 {
   width: 35%;
   padding: 1rem;
@@ -138,6 +146,10 @@ p {
 .img-35 img {
   width: 100%;
   height: auto;
+}
+
+.feed-text {
+  width: 65%;
 }
 
 .feed-text h3 {
@@ -159,7 +171,11 @@ p {
   flex-flow: row nowrap;
   justify-content: space-around;
   width: 100%;
-  padding: 2rem 1.5rem;
+  padding: 2rem 0 2rem 1.5rem;
+}
+
+#banner {
+  background-color: rgba(218, 216, 209, 0.15);
 }
 
 .cta {
@@ -197,14 +213,23 @@ p {
   margin-top: 2rem;
 }
 
+.btn:hover {
+  box-shadow: 5px 5px 10px #888888;
+}
+
 .btn a {
   color: #fff;
   text-decoration: none;
 }
 
+.btn a:hover {
+  font-weight: 700;
+}
+
+
 /* Information Section Desktop Styles */
 #info {
-  background-color: rgba(218, 216, 209, 0.15);
+  background-color: #fff;
 }
 .cta-2 h2 {
   color: #566478;
@@ -236,23 +261,69 @@ p {
 }
 
 .feed-text a {
-  color: #ac6404;
+  color: #566478;
   text-decoration: none;
 }
+
+.feed-text a:hover {
+  color: #ac6404;
+}
+
 
 #lecture {
   border-bottom: none;
 }
 
-#lecture img {
-  width: 12.3rem;
-}
 
 /* Courses Section Desktop Styles */
+#courses {
+  padding: 0 4.5rem 2rem 4.5rem;
+  background-color: rgba(218, 216, 209, 0.15);
+}
+
+.row-2 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card {
+  display: inline-flex;
+  flex-direction: column;
+  width: 33%;
+  justify-content: flex-start;
+  margin: 1rem;
+  background-color: #fff;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 10px #888888;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.course-text {
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+h5 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: #84766d;
+}
+
+.course-des {
+  line-height: 1.5rem;
+}
 
 /* Thesis Section Desktop Styles */
 #thesis {
-  background-color: rgba(218, 216, 209, 0.15);
+  background-color: #fff;
 }
 
 #thesis .img-60 {
@@ -280,6 +351,7 @@ footer {
   border-top: .0625rem solid #84766d;
   font-size: 0.75rem;
   color: #84766d;
+  background-color: rgba(218, 216, 209, 0.15);
 }
 
 #footer-links a {
