@@ -362,16 +362,8 @@ footer {
 
 /* Mobile Styling */
 @media only screen and (max-width: 480px) {
-  html {
-    font-size: 12px;
-  }
 
-  /* Header Section */
-  div#logo {
-    display: none;
-  }
-
-  #desktop-nav {
+  div#logo, #desktop-nav, #keep-learning, .img-35, .img-class, .course, .course-des, .video-des, #thesis-feed, #footer-links {
     display: none;
   }
 
@@ -383,6 +375,17 @@ footer {
     justify-content: space-between;
   }
 
+  .img-60 {
+    width: 100%;
+  }
+
+  #thesis .img-60 {
+    padding: 0 0 1.5rem 0;
+  }
+
+  footer {
+    padding: 1rem;
+  }
 
 
 
