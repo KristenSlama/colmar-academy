@@ -370,6 +370,10 @@ footer {
     display: none;
   }
 
+  nav {
+    width: 100%;
+  }
+
   #mobile-nav {
     width: 100%;
     display: inline-flex;
@@ -399,23 +403,80 @@ footer {
   .cta {
     width: 100%;
     flex-flow: column wrap;
-    padding: 0 1rem 2rem 1rem;
+        padding: 0 0 2rem 0;
   }
 
   .cta h1 {
+    width: 85%;
     font-size: 2.5rem;
-    padding-bottom: 2rem;
+    padding: 0 1rem 2rem 1rem;
   }
 
   .cta p {
-    width: 100%;
+    width: 85%;
     font-size: 1rem;
     line-height: 2rem;
-    padding-bottom: 1.5rem;
+    padding: 0 1rem 1.5rem 1rem;
   }
 
   .btn {
     margin: 0 auto;
+  }
+
+  #info {
+    padding: 0;
+  }
+
+  .feed {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+  }
+
+  .row {
+    flex-flow: column nowrap;
+    border-bottom: none;
+    align-items: flex-start;
+  }
+
+  .row img {
+    width: 100%;
+    height: 75%;
+  }
+
+  .feed-text {
+    width: 100%;
+  }
+
+  .feed-text h3, .feed-text p {
+    padding: 1rem;
+  }
+
+  .img-mobile {
+    display: flex;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    padding: 2rem 0 1rem 0;
+  }
+
+  #courses {
+    padding: 0.5rem 1rem;
+  }
+
+  .row-2 {
+    flex-flow: column wrap;
+  }
+
+  .card {
+    width: 100%;
+    padding: 0;
+    margin: .5rem auto;
+  }
+
+  .course-text {
+    padding: 1rem;
   }
 
   #thesis .img-60 {
