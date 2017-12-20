@@ -1,9 +1,9 @@
 /* color palette - colors pulled from banner image
-  Orange = #ac6404 rgb(172, 100, 4)- for buttons and read more links
-  Blue = #566478 rgb(86, 100, 120)- for headlines >h3
-  Beige = #DAD8D1 rgb(218, 216, 209) - general background color
-  Dark Gray = #333333 rgb(51, 51, 51) - for body text and ≤h3
-  Taupe = #84766d rgb(132, 118, 109) -
+  Orange = #ac6404 rgb(172, 100, 4)
+  Blue = #566478 rgb(86, 100, 120)
+  Beige = #DAD8D1 rgb(218, 216, 209)
+  Dark Gray = #333333 rgb(51, 51, 51)
+  Taupe = #84766d rgb(132, 118, 109)
 */
 
 html {
@@ -362,6 +362,9 @@ footer {
 
 /* Mobile Styling */
 @media only screen and (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
 
   div#logo, #desktop-nav, #keep-learning, .img-35, .img-class, .course, .course-des, .video-des, #thesis-feed, #footer-links {
     display: none;
@@ -375,8 +378,44 @@ footer {
     justify-content: space-between;
   }
 
+  h3 {
+    font-size: 1.25rem;
+  }
+
   .img-60 {
     width: 100%;
+    padding: 0;
+  }
+
+  #banner {
+    flex-flow: column nowrap;
+    padding: 0;
+  }
+
+  #banner .img-60 {
+    padding-bottom: 2rem;
+  }
+
+  .cta {
+    width: 100%;
+    flex-flow: column wrap;
+    padding: 0 1rem 2rem 1rem;
+  }
+
+  .cta h1 {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .cta p {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .btn {
+    margin: 0 auto;
   }
 
   #thesis .img-60 {
